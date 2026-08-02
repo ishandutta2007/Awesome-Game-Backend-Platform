@@ -8,17 +8,22 @@ Below is a **curated list** of notable platforms and their open-source equivalen
 
 ## 🏢 SaaS / Hosted Platforms
 
-- **[PlayFab](https://playfab.com/)** (Microsoft) — Comprehensive live-ops and backend platform with authentication, multiplayer, economy, analytics, and cloud scripting.
-- **[Photon Engine](https://www.photonengine.com/)** — Popular real-time multiplayer networking platform (Photon Realtime, PUN, Fusion, Quantum) with managed cloud options.
-- **[Unity Gaming Services](https://unity.com/products/gaming-services)** — Suite of backend services from Unity (Lobby, Matchmaker, Relay, Cloud Save, Economy, etc.).
-- **[Epic Online Services (EOS)](https://dev.epicgames.com/en-US/services)** — Free cross-platform online services from Epic (auth, lobbies, matchmaking, achievements, voice, etc.).
-- **[AccelByte](https://accelbyte.io/)** — Enterprise-grade game backend and live-ops platform focused on multiplayer and player engagement.
-- **[Beamable](https://beamable.com/)** — Managed live-ops and backend platform with C# microservices support.
-- **[Pragma Platform](https://www.pragma.gg/)** — Backend platform designed for live-service games.
-- **[LootLocker](https://lootlocker.com/)** — Indie-friendly game backend focused on progression, inventory, leaderboards, and economy.
-- **[Edgegap](https://edgegap.com/)** — Orchestration and hosting platform for dedicated game servers with edge deployment.
-- **[BrainCloud](https://braincloud.com/)** / **[Backendless](https://backendless.com/)** and similar BaaS platforms — Backend-as-a-Service solutions sometimes used for game features.
-- **GameSparks** (Amazon) — Legacy managed game backend (now largely transitioned into other Amazon/AWS offerings).
+| Platform | Description | Free Tier Limit | Pricing Model / Paid Plans |
+| :--- | :--- | :--- | :--- |
+| **[PlayFab](https://playfab.com/)** (Microsoft) | Comprehensive live-ops and backend platform with auth, multiplayer, economy, analytics, and cloud scripting. | Up to 1,000 lifetime player accounts (Development Mode); Free for Xbox games (Foundation Mode). | Pay-as-you-go based on consumption meters once live. |
+| **[Photon Engine](https://www.photonengine.com/)** | Popular real-time multiplayer networking platform (Photon Realtime, PUN, Fusion, Quantum) with managed cloud options. | 20 CCU free tier for development/non-commercial; 100 CCU free tier for Fusion & Quantum. | Tiered CCU packages (e.g., 200 CCU, 500 CCU) or pay-as-you-go bursting. |
+| **[Unity Gaming Services](https://unity.com/products/gaming-services)** | Suite of backend services from Unity (Lobby, Matchmaker, Relay, Cloud Save, Economy, etc.). | Service-specific free limits (e.g., Analytics up to 50k MAU, Vivox up to 5k CCU, 10 GiB Lobby bandwidth). | Pay-as-you-go based on actual consumption over free tier limits. |
+| **[Epic Online Services (EOS)](https://dev.epicgames.com/en-US/services)** | Free cross-platform online services from Epic (auth, lobbies, matchmaking, achievements, voice, etc.). | 100% Free / No usage caps. | Completely Free. |
+| **[AccelByte](https://accelbyte.io/)** | Enterprise-grade game backend and live-ops platform focused on multiplayer and player engagement. | 90-day free trial; Free up to 30 peak CCU on AGS Public Cloud (requires credit card after 90 days). | Usage-based pay-as-you-go for Public Cloud; Custom enterprise pricing for Private Cloud (starts at $1,500–$3,500+/mo). |
+| **[Beamable](https://beamable.com/)** | Managed live-ops and backend platform with C# microservices support. | 90-day free trial (equivalent to Developer tier). | Usage-based model (e.g., $100 per 10 million API calls) + tiered plans based on MAU/API volume. |
+| **[Pragma Platform](https://www.pragma.gg/)** | Backend platform designed for live-service games. | 30-day trial; Free "Basic" support tier (community, Discord, and documentation access only). | Sales-led enterprise pricing with custom contracts. |
+| **[LootLocker](https://lootlocker.com/)** | Indie-friendly game backend focused on progression, inventory, leaderboards, and economy. | 30-day trial (up to 1,000 MAU); Free non-commercial license for students and hobbyists. | Usage-based scaling model based on MAU (Fair Use Agreement). |
+| **[Edgegap](https://edgegap.com/)** | Orchestration and hosting platform for dedicated game servers with edge deployment. | Dev/testing tier: 1 hour uptime per deployment, 1.5 vCPU, 1 concurrent deployment, 3 hours matchmaking. | Pay-per-use usage-based pricing for production. |
+| **[BrainCloud](https://braincloud.com/)** | Backend-as-a-Service solution used for game features (databases, cloud code, analytics). | Free Development Plan: up to 100 DAU, 1,000 lifetime users, no real IAP. | Development Plus ($5/mo); Paid subscription plans once live (pay-as-you-go based on usage). |
+| **[Backendless](https://backendless.com/)** | Backend-as-a-Service solution sometimes used for game features. | Free Plan: 50 requests/min, 1,000 requests/day, 20 data tables, 15,000 database records, 1 GB storage. | Scale Plan (variable/fixed options); Backendless Pro (on-premise/installable). |
+| **GameSparks** (Amazon) | Legacy managed game backend (now largely transitioned into other Amazon/AWS offerings). | Discontinued / Not available. | Legacy/Discontinued. |
+
+
 
 ## 🔓 Open-Source Software
 
