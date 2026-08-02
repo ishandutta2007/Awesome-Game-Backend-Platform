@@ -1,5 +1,7 @@
 # Awesome-Game-Backend-Platform
 
+![Awesome Game Backend Platforms Banner](assets/banner.svg)
+
 ## Similar Projects to Game Backend Platforms
 
 **Game Backend Platforms** provide the server-side infrastructure needed for online games: authentication, player data storage, matchmaking, real-time multiplayer, leaderboards, chat, inventory, economy, analytics, and live-ops features. Leading commercial and managed platforms include Heroic Labs Nakama (also open-source), AccelByte, Beamable, Pragma Platform, LootLocker, PlayFab, Edgegap, Photon Engine, Unity Gaming Services, Epic Online Services, GameSparks (Amazon), BrainCloud, and Backendless.

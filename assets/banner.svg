@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    
+    <linearGradient id="cyan-violet" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    /* CSS Animations */
+    @keyframes pulse {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.05); }
+    }
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(5deg); }
+    }
+    @keyframes float-fast {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-25px) rotate(-10deg); }
+    }
+    @keyframes glow-pulse {
+      0%, 100% { filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.4)); }
+      50% { filter: drop-shadow(0 0 25px rgba(236, 72, 153, 0.8)); }
+    }
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -40;
+      }
+    }
+
+    /* Target classes */
+    .bg-grid {
+      stroke: #1f2937;
+      stroke-width: 1;
+      opacity: 0.15;
+    }
+    .glowing-orb {
+      animation: pulse 8s infinite ease-in-out;
+    }
+    .controller-art {
+      animation: float-slow 6s infinite ease-in-out;
+      transform-origin: 950px 200px;
+    }
+    .cloud-art {
+      animation: float-fast 8s infinite ease-in-out;
+      transform-origin: 200px 120px;
+    }
+    .title-text {
+      font-family: 'Outfit', 'Inter', -apple-system, sans-serif;
+      font-weight: 800;
+      fill: url(#primary-grad);
+      animation: glow-pulse 4s infinite ease-in-out;
+    }
+    .subtitle-text {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-weight: 500;
+      fill: #9ca3af;
+      letter-spacing: 2px;
+    }
+    .tech-node {
+      animation: pulse 4s infinite ease-in-out;
+    }
+    .data-stream {
+      stroke-dasharray: 8, 12;
+      animation: dash 2s linear infinite;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg-grad)" />
+
+  <!-- Dynamic Background Grid -->
+  <g class="bg-grid">
+    <path d="M 0,50 L 1200,50 M 0,100 L 1200,100 M 0,150 L 1200,150 M 0,200 L 1200,200 M 0,250 L 1200,250 M 0,300 L 1200,300 M 0,350 L 1200,350" />
+    <path d="M 100,0 L 100,400 M 200,0 L 200,400 M 300,0 L 300,400 M 400,0 L 400,400 M 500,0 L 500,400 M 600,0 L 600,400 M 700,0 L 700,400 M 800,0 L 800,400 M 900,0 L 900,400 M 1000,0 L 1000,400 M 1100,0 L 1100,400" />
+  </g>
+
+  <!-- Decorative Glowing Orbs -->
+  <circle class="glowing-orb" cx="150" cy="100" r="120" fill="#3b82f6" filter="url(#glow)" />
+  <circle class="glowing-orb" cx="1050" cy="300" r="150" fill="#ec4899" filter="url(#glow)" opacity="0.3" style="animation-delay: -4s;" />
+
+  <!-- Tech Lines / Connections -->
+  <g stroke="#374151" stroke-width="2" fill="none">
+    <path class="data-stream" stroke="#60a5fa" d="M 150,180 L 300,180 L 350,230" />
+    <path class="data-stream" stroke="#f472b6" d="M 1050,220 L 900,220 L 850,170" style="animation-delay: -1s;" />
+  </g>
+
+  <!-- Left Float Object: Cloud Server Icon -->
+  <g class="cloud-art">
+    <rect x="130" y="80" width="140" height="90" rx="15" fill="url(#cyan-violet)" opacity="0.8" />
+    <rect x="150" y="100" width="100" height="15" rx="5" fill="#0b0f19" />
+    <rect x="150" y="125" width="100" height="15" rx="5" fill="#0b0f19" />
+    <circle cx="230" cy="107.5" r="4" fill="#10b981" />
+    <circle cx="230" cy="132.5" r="4" fill="#3b82f6" />
+  </g>
+
+  <!-- Right Float Object: Game Controller Icon -->
+  <g class="controller-art">
+    <path d="M 900,160 C 880,160 840,170 840,210 C 840,260 870,290 890,290 C 910,290 930,270 950,270 C 970,270 990,290 1010,290 C 1030,290 1060,260 1060,210 C 1060,170 1020,160 1000,160 Z" fill="url(#primary-grad)" />
+    <!-- D-Pad -->
+    <path d="M 875,200 L 885,200 L 885,190 L 895,190 L 895,200 L 905,200 L 905,210 L 895,210 L 895,220 L 885,220 L 885,210 L 875,210 Z" fill="#0b0f19" />
+    <!-- Action Buttons -->
+    <circle cx="1010" cy="195" r="8" fill="#0b0f19" />
+    <circle cx="1030" cy="210" r="8" fill="#0b0f19" />
+    <circle cx="1010" cy="225" r="8" fill="#0b0f19" />
+    <circle cx="990" cy="210" r="8" fill="#0b0f19" />
+  </g>
+
+  <!-- Centered Typography -->
+  <g text-anchor="middle">
+    <!-- Main Title -->
+    <text class="title-text" x="600" y="210" font-size="54" letter-spacing="1">AWESOME GAME BACKEND PLATFORMS</text>
+    <!-- Subtitle -->
+    <text class="subtitle-text" x="600" y="260" font-size="18">A CURATED LIST OF PRODUCTION-READY &amp; OPEN-SOURCE SERVICES</text>
+  </g>
+</svg>
