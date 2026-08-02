@@ -28,14 +28,14 @@ Below is a **curated list** of notable platforms and their open-source equivalen
 ## 🔓 Open-Source Software
 
 ### Full Game Backend Servers
-- **[Nakama](https://github.com/heroiclabs/nakama)** (Heroic Labs) — The leading open-source game backend (Apache 2.0). Provides real-time multiplayer, matchmaking, leaderboards, chat, storage, authentication, parties, and server-authoritative logic (Go, TypeScript, Lua runtimes). Excellent SDKs for Unity, Unreal, Godot, and more. Can be self-hosted or run via Heroic Cloud.
-- **[Colyseus](https://github.com/colyseus/colyseus)** — Popular open-source multiplayer framework for Node.js / TypeScript. Focuses on room-based real-time games with state synchronization. Great for browser and multiplayer experiences.
-- **[Pitaya](https://github.com/topfreegames/pitaya)** — Scalable open-source game server framework written in Go, with clustering support and client libraries for multiple platforms.
-- **[Talo](https://github.com/TaloDev)** — Modern open-source (MIT), self-hostable game backend focused on indie developers. Includes player management, leaderboards, cloud saves, analytics, live config, and multiplayer features.
-- **[Lance](https://github.com/lance-gg/lance)** — Open-source real-time multiplayer game server based on Node.js, with client-side prediction, interpolation, and efficient networking.
+- **[Nakama](https://github.com/heroiclabs/nakama)** [![GitHub stars](https://img.shields.io/github/stars/heroiclabs/nakama?style=social&color=white)](https://github.com/heroiclabs/nakama/stargazers) (Heroic Labs) — The leading open-source game backend (Apache 2.0). Provides real-time multiplayer, matchmaking, leaderboards, chat, storage, authentication, parties, and server-authoritative logic (Go, TypeScript, Lua runtimes). Excellent SDKs for Unity, Unreal, Godot, and more. Can be self-hosted or run via Heroic Cloud.
+- **[Colyseus](https://github.com/colyseus/colyseus)** [![GitHub stars](https://img.shields.io/github/stars/colyseus/colyseus?style=social&color=white)](https://github.com/colyseus/colyseus/stargazers) — Popular open-source multiplayer framework for Node.js / TypeScript. Focuses on room-based real-time games with state synchronization. Great for browser and multiplayer experiences.
+- **[Pitaya](https://github.com/topfreegames/pitaya)** [![GitHub stars](https://img.shields.io/github/stars/topfreegames/pitaya?style=social&color=white)](https://github.com/topfreegames/pitaya/stargazers) — Scalable open-source game server framework written in Go, with clustering support and client libraries for multiple platforms.
+- **[Lance](https://github.com/lance-gg/lance)** [![GitHub stars](https://img.shields.io/github/stars/lance-gg/lance?style=social&color=white)](https://github.com/lance-gg/lance/stargazers) — Open-source real-time multiplayer game server based on Node.js, with client-side prediction, interpolation, and efficient networking.
+- **[Talo](https://github.com/TaloDev)** [![GitHub stars](https://img.shields.io/github/stars/TaloDev/backend?style=social&color=white)](https://github.com/TaloDev/backend/stargazers) — Modern open-source (MIT), self-hostable game backend focused on indie developers. Includes player management, leaderboards, cloud saves, analytics, live config, and multiplayer features.
 
 ### Dedicated Server Orchestration & Infrastructure
-- **[Agones](https://github.com/googleforgames/agones)** — Open-source dedicated game server hosting and scaling solution built on Kubernetes. Excellent for managing fleets of game servers.
+- **[Agones](https://github.com/googleforgames/agones)** [![GitHub stars](https://img.shields.io/github/stars/googleforgames/agones?style=social&color=white)](https://github.com/googleforgames/agones/stargazers) — Open-source dedicated game server hosting and scaling solution built on Kubernetes. Excellent for managing fleets of game servers.
 - Other Kubernetes-based or container orchestration tools commonly paired with the backends above.
 
 ### Additional Open-Source Frameworks
