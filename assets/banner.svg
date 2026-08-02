@@ -131,7 +131,7 @@
   <!-- Centered Typography -->
   <g text-anchor="middle">
     <!-- Main Title -->
-    <text class="title-text" x="600" y="210" font-size="54" letter-spacing="1">AWESOME GAME BACKEND PLATFORMS</text>
+    <text class="title-text" x="600" y="210" font-size="46" letter-spacing="1">AWESOME GAME BACKEND PLATFORMS</text>
     <!-- Subtitle -->
     <text class="subtitle-text" x="600" y="260" font-size="18">A CURATED LIST OF PRODUCTION-READY &amp; OPEN-SOURCE SERVICES</text>
   </g>
